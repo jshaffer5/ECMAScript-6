@@ -1,0 +1,9 @@
+// In order to help us create more flexible functions, ES6 introduces the rest parameter for function parameters. 
+// With the rest parameter, you can create functions that take a variable number of arguments
+
+const sum = (...args) => {
+  return args.reduce((a, b) => a + b, 0);
+}
+
+console.log(sum(1,2,3));
+// console output: 6
