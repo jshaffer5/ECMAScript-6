@@ -6,6 +6,8 @@ const HIGH_TEMPERATURES = {
 
 // ES6 code with destructuring
 const { today, tomorrow } = HIGH_TEMPERATURES
+// Assignment with new variable names
+const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
 
 // ES5 code, without destructuring assignment:
 const today = HIGH_TEMPERATURES.today;
