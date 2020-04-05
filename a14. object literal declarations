@@ -1,0 +1,13 @@
+const createPerson = (name, age, gender) => {
+  "use strict";
+  // ES5
+  return {
+    name: name,
+    age: age,
+    gender: gender
+  };
+  // ES6 converts 'name' to 'name: name' under the hood
+  return {
+    name, age, gender
+  };
+};
