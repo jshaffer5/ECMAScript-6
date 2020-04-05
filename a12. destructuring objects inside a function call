@@ -1,0 +1,16 @@
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+
+// Normally we would pass the entire object we need as a function's parameters
+const half = (stats) => (stats.max + stats.min) / 2.0; 
+
+// With ES6 this can be made more concise by destructuring only the variables we need
+const half = ({ max, min}) => (max + min) / 2.0; 
+console.log(half(stats));
+// Output: 28.015
