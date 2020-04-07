@@ -1,0 +1,12 @@
+// In ES5, we usually define a constructor function and use the new keyword to instantiate an object.
+// Now ES6 allows class
+
+class Vegetable {
+  constructor(name) {
+    this.name = name;
+  }
+}
+// Only change code above this line
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'
