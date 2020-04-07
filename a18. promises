@@ -1,0 +1,18 @@
+// A promise has three states: pending, fulfilled, and rejected
+// the resolve and reject methods are used to fulfill and promise
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer represents a response from a server
+  let responseFromServer;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+// then is called after the resolve method completes while catch is the method used when your promise 
+// has been rejected. It is executed immediately after a promise's reject method is called. Here’s the syntax:
+makeServerRequest.then(result => {console.log(result)});
+makeServerRequest.catch(error => {console.log(error)});
