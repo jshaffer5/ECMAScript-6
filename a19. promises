@@ -1,5 +1,5 @@
 // A promise has three states: pending, fulfilled, and rejected
-// the resolve and reject methods are used to fulfill and promise
+// the resolve and reject methods are used to fulfill with 'then' or get an error with 'catch' 
 
 const makeServerRequest = new Promise((resolve, reject) => {
   // responseFromServer represents a response from a server
