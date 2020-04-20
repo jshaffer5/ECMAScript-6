@@ -6,7 +6,7 @@ const createPerson = (name, age, gender) => {
     age: age,
     gender: gender
   };
-  // ES6 converts 'name' to 'name: name' under the hood
+  // ES6 converts 'name' to 'name: name' et al, under the hood
   return {
     name, age, gender
   };
