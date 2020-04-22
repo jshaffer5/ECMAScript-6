@@ -38,5 +38,5 @@ export default function add(x, y) {
   return x + y;
 }
 
-// Note that no curly braces are used when importing a default functions
+// Note that no curly braces are used when importing a default function
 import add from "./math_functions.js";
