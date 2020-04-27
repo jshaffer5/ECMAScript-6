@@ -20,3 +20,9 @@ makeServerRequest.finally(() => {console.log('settled')});
 
 // If .finally is declared for a promise, it will be executed whenever a promise is settled, irrespective of 
 // whether it is fulfilled or rejected
+
+// Promise.prototype.all(iterable) returns a single promise that resolves if
+// all of the promises in the iterable argument have resolved
+// promisesArray.push(promise1);
+promisesArray.push(promise2);
+var handleAllPromises = Promise.all(promisesArray);
