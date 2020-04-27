@@ -16,3 +16,7 @@ const makeServerRequest = new Promise((resolve, reject) => {
 // has been rejected. It is executed immediately after a promise's reject method is called. Here’s the syntax:
 makeServerRequest.then(result => {console.log(result)});
 makeServerRequest.catch(error => {console.log(error)});
+makeServerRequest.finally(() => {console.log('settled')});
+
+// If .finally is declared for a promise, it will be executed whenever a promise is settled, irrespective of 
+// whether it is fulfilled or rejected
